@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- bean definitions here -->
+
+	<!-- <bean id="MergeSort" class="com.demo.MergeSort"></bean> <bean id="BubbleSort" 
+		class="com.demo.BubbleSort"></bean> -->
+
+	<!-- <context:component-scan base-package="com.demo"></context:component-scan> -->
+
+	<!-- <bean id="tyre" class="com.demo.Tyre"> <constructor-arg value = "welcome"> 
+		</constructor-arg> <constructor-arg value = "20000"></constructor-arg> </bean> -->
+
+
+	<bean id="collection" class="com.demo.CollectionDemo">
+		<property name="addressList">
+			<list>
+				<value>IND</value>
+				<value>AUS</value>
+				<value>ENG</value>
+				<value>NZ</value>
+			</list>
+		</property>
+
+		<property name="addressSet">
+			<set>
+				<value>IND</value>
+				<value>AUS</value>
+				<value>ENG</value>
+				<value>NZ</value>
+			</set>
+		</property>
+
+		<property name="addressMap">
+			<map>
+
+				<entry key="1" value="IND"></entry>
+				<entry key="2" value="AUS"></entry>
+				<entry key="3" value="ENG"></entry>
+				<entry key="4" value="NZ"></entry>
+			</map>
+		</property>
+
+	</bean>
+
+
+
+
+</beans>
